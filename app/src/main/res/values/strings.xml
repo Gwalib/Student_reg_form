@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FORM_STU</string>
+
+
+    <string-array name="courses">
+        <item>O LEVEL</item>
+        <item>A LEVEL</item>
+        <item>B LEVEL</item>
+        <item>C LEVEL</item>
+    </string-array>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/adtxt"
+        android:layout_width="155dp"
+        android:layout_height="26dp"
+        android:background="@color/purple_200"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:padding="5dp"
+        android:text="Admission Form"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="274dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:hint="ENTER YOUR NAME"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <EditText
+        android:id="@+id/txtage"
+        android:layout_width="202dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:hint="ENTER YOUR AGE"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtname"
+        app:layout_constraintTop_toBottomOf="@+id/txtname"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <TextView
+        android:id="@+id/txtdob"
+        android:layout_width="182dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="SELECT YOUR D.O.B."
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtage"
+        app:layout_constraintTop_toBottomOf="@+id/txtage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ad2txt"
+        android:layout_width="249dp"
+        android:layout_height="32dp"
+        android:hint="SELECT YOUR GENDER"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtdob"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtdob"
+        app:layout_constraintTop_toBottomOf="@+id/txtdob"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <RadioGroup
+        android:id="@+id/butgrp"
+        android:layout_width="130dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ad2txt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ad2txt"
+        app:layout_constraintTop_toBottomOf="@+id/ad2txt"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/butm"
+            android:layout_width="126dp"
+            android:layout_height="37dp"
+            android:text="MALE"
+            android:textSize="15dp"
+            />
+
+        <RadioButton
+            android:id="@+id/butf"
+            android:layout_width="126dp"
+            android:layout_height="37dp"
+            android:text="FEMALE"
+            android:textSize="15dp" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/courses"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/butgrp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/butgrp"
+        app:layout_constraintTop_toBottomOf="@+id/butgrp"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <RadioGroup
+        android:id="@+id/butgrp2"
+        android:layout_width="174dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butgrp"
+        app:layout_constraintVertical_bias="0.687">
+
+        <RadioButton
+            android:layout_width="126dp"
+            android:layout_height="37dp"
+            android:text="IT"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:layout_width="174dp"
+            android:layout_height="37dp"
+            android:text="HARDWARE"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:layout_width="174dp"
+            android:layout_height="37dp"
+            android:text="MULTIMEDIA"
+            android:textSize="15dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtcourse"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:text="SELECT COURSE"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ad2txt"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/ad2txt"
+        app:layout_constraintTop_toBottomOf="@+id/ad2txt"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <TextView
+        android:id="@+id/txtstream"
+        android:layout_width="254dp"
+        android:layout_height="28dp"
+        android:text="SELECT YOUR STREAM BELOW"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtcourse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtcourse"
+        app:layout_constraintTop_toBottomOf="@+id/txtcourse"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT FORM"
+        android:textSize="15dp"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.765"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
